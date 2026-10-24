@@ -86,7 +86,7 @@ app.get('/health', (req, res) => {
 });
 app.use(express.json({ limit: '10kb' }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public'), { extensions: ['html'] }));
 
 const authLimiter = rateLimit({
   windowMs: 15 * 60 * 1000, max: 30, standardHeaders: true, legacyHeaders: false,
