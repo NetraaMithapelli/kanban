@@ -113,7 +113,3 @@ All routes are under `/api`. Task routes and `/api/me` require a valid session c
 | `POST` | `/tasks/clear-done` | Delete all your completed tasks |
 
 There is also a `GET /health` route (outside `/api`) that returns `200` when the database is connected. Hosting platforms use it to check the app is running.
-
-## License
-
-Released under the MIT License.
